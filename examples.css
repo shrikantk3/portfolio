@@ -238,8 +238,8 @@ p{
 	color: #444;
 }
 #section1 p{
-	color: #333;
-	color: rgba(0,0,0,0.3);
+	
+    color: rgba(206, 201, 201, 0.94);
 }
 #section1 img{
 	margin: 20px 0;
@@ -323,14 +323,38 @@ p{
 	width: 90px;
 }
 
-.skills-modal {
-    position: fixed;
+.skills-modal p {
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 8px;
+    text-align: left;
+}
+.skills-modal h2 {
+    color: #fff;
+    font-size: 35px;
+    text-align: left;
+    position: relative;
+    font-weight: 900;
+    margin-bottom: 53px;
+}
+	.skills-modal {
+	position: fixed;
+	z-index:999;
     top: 45px;
     left: -4px;
     padding: 30px;
     font-size: 30px;
     border: 3px solid #3b597b;
     border-radius: 0 43px 43px 0;
-    background: rgba(24, 93, 175, 0.10196078431372549);
+    background: rgba(33, 53, 76, 0.78);
     box-shadow: 12px 6px 17px 2px rgba(51, 51, 51, 0.44);
+}
+.skills-modal h2:before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background: #fff;
+    top: 52px;
 }

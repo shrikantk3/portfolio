@@ -126,6 +126,17 @@ canvas{ display:none !important;}
     position: relative;
     color: #333;
 }
+ul.skills:nth-child(2){
+  padding-left: 0px;
+  margin-top: -60px;
+}
+ul.skills:nth-child(2) li:first-child{
+  border-bottom:0 !important;
+}
+  ul.skills:nth-child(2) li:last-child{
+  border-right:0;
+}
+
 
 ul.skills {
   display: block;
@@ -208,18 +219,8 @@ ul.skills li:hover img{
   -o-transform:scale(1.9); 
 }
 .skills a img{max-width:120px; height:auto; max-width:90px;   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);  transition:all 0.5s ease; 
+  filter: grayscale(100%);  transition:all 0.5s ease; max-height: 70px; 
   }
-ul.skills:nth-child(2n){
-  padding-left: 0px;
-  margin-top: -60px;
-}
-ul.skills:nth-child(2n) li:first-child{
-  border-bottom:0 !important;
-}
-  ul.skills:nth-child(2n) li:last-child{
-  border-right:0;
-}
   div#map {
     height: 100%;
     width: 100%;
