@@ -3,7 +3,7 @@
 $(document).ready(function () {
  
     initMap(); 
-    
+    $('.skills-modal').hide();      
 
 });
 
@@ -346,4 +346,20 @@ function initMap() {
       infowindow2.open(map, beachMarker2);
 
 
+}
+
+
+function skillDescribe(val){
+  $('.skills-modal').show();
+   $('.skills-modal').html(skills[val]);
+}
+
+var skills= {
+  ng:'<h2>Angular</h2><p>Relevant Ex: 2 Years</p><p>Projects: Happy HR, Bidieye, Verikilck </p><p>last use: 1 month ago</p>',
+  react:'<h2>React.js</h2><p>Relevant Ex: 1 Years</p><p>Projects: HopeJax, chef-ex</p><p>last use: 6 month ago</p>',
+  node:'<h2>Node.js</h2><p>Relevant Ex: 6 Months</p><p>Projects: HopeJax, HappyHr, Veriklick</p><p>last use: 1 month ago</p>',
+  css:'<h2>CSS3</h2><p>Relevant Ex: 3.7 Years</p><p>Projects: Suvari, HappyHr, HopeJax, chef-ex, Veriklick, etc</p><p>last use: 6 month ago</p>',
+  d3:'<h2>D3.js</h2><p>Relevant Ex: 6 month</p><p>Projects: Humenbase, Bidieye</p>',
+  html:'<h2>HTML5</h2><p>Relevant Ex: 1 Years</p><p>Projects: HopeJax, chef-ex</p><p>last use: 1 month ago</p>',
+  ngx:'<h2>Bootstrap</h2><p>Relevant Ex: 1 Years</p><p>Projects: HopeJax, chef-ex</p><p>last use: 1 month ago</p>'
 }

@@ -211,11 +211,14 @@ ul.skills li:hover img{
   filter: grayscale(100%);  transition:all 0.5s ease; 
   }
 ul.skills:nth-child(2n){
-  padding-left: 228px;
+  padding-left: 0px;
   margin-top: -60px;
 }
-ul.skills:nth-child(2n) li:last-child{
-  border:0;
+ul.skills:nth-child(2n) li:first-child{
+  border-bottom:0 !important;
+}
+  ul.skills:nth-child(2n) li:last-child{
+  border-right:0;
 }
   div#map {
     height: 100%;
@@ -325,6 +328,21 @@ label.form-inline {
 
 .mobile_no{display:none;}
 
+.part .fa {
+  width: 25px;
+  font-size: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.6784313725490196);
+  text-align: center;
+  padding: 7px;
+  border-radius: 50%;
+  border: 2px solid #4b732c;
+  color: #168849;
+  box-shadow: inset 1px 1px 7px 1px rgba(53, 138, 59, 0.82);
+}
+.intro-sect .text-left {
+  margin-bottom: 12px; font-size:25px;
+}
 
 
 @media screen and (max-width:991px){
