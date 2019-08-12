@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Shr!k@nt | Front-end developer</title>
+	<title>SHRIKANT | Web developer</title>
 	<meta name="author" content="Alvaro Trigo Lopez" />
 	<meta name="description" content="Front-end developer, JS developer portfolio by Shrikant Kumar" />
 	<meta name="keywords" content="Front-end,JS developer,Angular developer,Full-stack portfolio,UI developer portfolio,portfolio,Javascript developer portfolio,React.js portfolio,portfolio website,website,user interface,IT company" />
@@ -19,7 +19,11 @@
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
+<script>
+	$(document).ready(function(){
+		$('.preloader').hide();
+	});
+</script>
 	<script type="text/javascript" src="jquery.pagepiling.min.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfyJew4ioXhFCJZ5rFqLHg9cUsKRujWis&callback=initMap">
 	</script>
@@ -187,22 +191,22 @@
 			<div class="intro">
 				<h1 class="page-title" style="color:#5448cc;">Let's talk with a cup of beer</h1>
 				<p class="page-subtitle">Don't forget to use afterRender callback for it!</p>
-				<form>
+				<form action="#" method="POST">
 					<div class="form-group">
 						<label class="form-inline">Name</label>
-						<input type="text" class="form-control" id="name" />
+						<input type="text" class="form-control" id="name" required/>
 					</div>
 					<div class="form-group">
 							<label class="form-inline">Email</label>
-							<input type="email" class="form-control" id="email" />
+							<input type="email" class="form-control" id="email" required/>
 						</div>
 						<div class="form-group">
 							<label class="form-inline">Phone</label>
-							<input type="phone" class="form-control" id="phone" />
+							<input type="tel" class="form-control" id="phone" required/>
 						</div>
 						<div class="form-group">
 								<label class="form-inline">Message</label>
-								<textarea class="form-control" style="min-height:120px; padding:20px;" id="message" ></textarea>
+								<textarea class="form-control" style="min-height:120px; padding:20px;" id="message"  required></textarea>
 							</div>
 							<p style="color:red;display:none;" class="errorMsg"  >All feild are mendetory, Please Try again.</p>
 							<p style="color:green;display:none;" class="successMsg"></p>
@@ -212,6 +216,9 @@
 				</form>
 			</div>
 		</div>
+	</div>
+	<div class="preloader">
+		<img src="preloader.gif" alt="preloader" />
 	</div>
 	<!-- <script type="text/javascript" src="particle.js"></script> -->
 	<script type="text/javascript" src="particlesjs-config.js"></script>

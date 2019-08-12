@@ -1,7 +1,8 @@
 
 // js for center images
 $(document).ready(function () {
- 
+
+  
     initMap(); 
     $('.skills-modal').hide();      
 
