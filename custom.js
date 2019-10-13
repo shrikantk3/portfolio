@@ -40,8 +40,8 @@ function initMap() {
         center: { lat: 28.611661, lng:77.389203 },
         zoom: 7,
         mapTypeControl: false,
-    scaleControl: true,
-    draggable: false,
+        scaleControl: true,
+        draggable: false,
         styles: [
             {
               "elementType": "geometry",
