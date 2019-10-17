@@ -624,6 +624,43 @@ ul.nav.navbar.contact a::after{
   opacity:0.8;
   z-index:0;
 }
-.project .proset li a h3{z-index:1; position: relative; font-size:30px; font-weight:bolder; color:#fff;}
-.project .proset li a h4{z-index:1; position: relative;font-size:20px; font-weight:bolder; color:#fff;}
-.project .proset li a p{z-index:1; position: relative;font-size:18px; font-weight:lighter; color:#fff !important;}
+.project .proset li a h3{ margin-bottom:12px; z-index:1; position: relative; font-size:30px; font-weight:bolder; color:#fff;}
+.project .proset li a h4{margin-bottom:12px;z-index:1; position: relative;font-size:20px; font-weight:bolder; color:#fff;}
+.project .proset li a .fa{color:#58d487;}
+.project .proset li a p{z-index:1; position: relative;font-size:20px; line-height:25px; font-weight:lighter; color:#fff !important;}
+.company-list{display:flex; padding: 30px 0 0}
+.company-list .media-body{text-align:left;}
+.company-list .media{padding:0 50px;}
+.company-list .media:nth-child(odd){border-right:3px dotted #a0d063;}
+.company-list .media:nth-child(even){padding-right:0px;}
+.company-list .media{display:flex;justify-content: left; align-items: center; }
+.company-list .media-body h1{position: relative; font-size:20px; margin-bottom:12px; color:#333; font-weight:bolder; text-transform:uppercase }
+.company-list .media-body h1::after{
+  content:'';
+  position: absolute;
+  width:90px;
+  bottom:-4px;
+  height:3px;
+  left:0;
+  animation:scc infinite linear 8s ;
+  background-color: #a0d063;
+
+}
+.company-list .media-body h2{font-size:18px; margin-bottom:5px; color:#333;}
+.company-list .media-body time{font-size:16px; color:#444; margin-bottom: 12px; display:block;}
+.company-list .media-body p{font-size:16px; color:#444;}
+.company-list img{height:90px;}
+
+@keyframes scc{
+  0%{ width:10px;}
+  100%{ width:290px;}
+}
+
+.project .proset li a {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+}
+

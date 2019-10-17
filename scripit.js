@@ -274,7 +274,7 @@ $(document).ready(function(){
         }
   
         $('.proset').slick({
-          centerMode: false,
+          centerMode: true,
           centerPadding: '60px',
           slidesToShow: 3,
           arrows:true,
@@ -299,4 +299,9 @@ $(document).ready(function(){
             }
           ]
         });
+        $('.project .proset').width($(window).width()-60);
 });
+
+$(window).resize(()=>{
+  $('.project .proset').width($(window).width()-60);
+})
