@@ -36,16 +36,26 @@ textarea:focus:-moz-placeholder { color:transparent; }
 textarea:focus::-moz-placeholder { color:transparent; }
 textarea:focus:-ms-input-placeholder { color:transparent; }
 
-input::-webkit-input-placeholder {color: #cccccc;}
-input:-moz-placeholder {color: #cccccc;}
-input::-moz-placeholder {color: #cccccc;}
-input:-ms-input-placeholder {color: #cccccc;}
+input::-webkit-input-placeholder {color: #00ad5f;}
+input:-moz-placeholder {color: #00ad5f;}
+input::-moz-placeholder {color: #00ad5f;}
+input:-ms-input-placeholder {color: #00ad5f;}
 
-textarea::-webkit-input-placeholder {color: #cccccc;}
-textarea:-moz-placeholder {color: #cccccc;}
-textarea::-moz-placeholder {color: #cccccc;}
-textarea:-ms-input-placeholder {color: #cccccc;}
-
+textarea::-webkit-input-placeholder {color: #00ad5f;}
+textarea:-moz-placeholder {color: #00ad5f;}
+textarea::-moz-placeholder {color: #00ad5f;}
+textarea:-ms-input-placeholder {color: #00ad5f;}
+.wrap-contact100:after {
+  content: 'Contect with me';
+  position: absolute;
+  top: calc(50% - 73px);
+  left: -203px;
+  background-color: #a0d063;
+  color: #4db060;
+  font-size: 40px;
+  padding: 16px 30px;
+  transform: rotate(90deg);
+}
 /*---------------------------------------------*/
 button {
 	outline: none !important;
@@ -460,6 +470,12 @@ textarea.input100 {
 div#map{
    width:55% !important;
 }
+input::placeholder, input::-webkit-input-placeholder,
+input::-moz-placeholder
+{
+  color:#fff;opacity:1;
+}
+
 
 input:-internal-autofill-selected {
   background-color:transparent !important;
