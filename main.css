@@ -611,23 +611,45 @@ ul.nav.navbar.contact a::after{
 
 
 .project .proset{padding:20px;width:100%; }
-.project .proset li{height:300px; background-color:#fafafa; border:1px solid #58d487;}
+.project .proset li{height:300px; margin:0 5px; background-color:#fafafa; border:1px solid #58d487;}
 .project .proset li a{display:block;}
-.project .proset li a article{position: relative; background-repeat: no-repeat; padding: 20px; background-size:cover;}
+.project .proset li a article{position: relative; background-position:center; background-size:cover; background-repeat: no-repeat; padding: 20px; background-size:cover;}
 .project .proset li a article::before{
   content:'';
   position: absolute;
   width:100%;
   height:100%;
-  background-color:#333;
+  background-color:rgba(51, 51, 51, 0.61);
   top:0; left:0;
   opacity:0.8;
   z-index:0;
+  opacity:0;
 }
-.project .proset li a h3{ margin-bottom:12px; z-index:1; position: relative; font-size:30px; font-weight:bolder; color:#fff;}
-.project .proset li a h4{margin-bottom:12px;z-index:1; position: relative;font-size:20px; font-weight:bolder; color:#fff;}
+.project .proset li a:hover article::before{
+  opacity:1;
+}
+.project .proset li a:hover h3{
+  opacity:1;
+}     
+  .project .proset li a h3{     
+  opacity:0;
+  margin-bottom: 12px;
+  z-index: 1;
+  position: relative;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 2px 1px 0px #a2d066;}
+.project .proset li a:hover h4{
+  opacity:1;
+}
+.project .proset li a h4{ opacity:0; margin-bottom:12px;z-index:1; position: relative;font-size:20px; font-weight:bolder; color:#fff;}
 .project .proset li a .fa{color:#58d487;}
-.project .proset li a p{z-index:1; position: relative;font-size:20px; line-height:25px; font-weight:lighter; color:#fff !important;}
+.project .proset li a:hover p{
+  opacity:1;
+}
+.project .proset li a p{ opacity:0; z-index:1; position: relative;font-size:20px; line-height:25px; font-weight:lighter; color:#fff !important;}
 .company-list{display:flex; padding: 30px 0 0}
 .company-list .media-body{text-align:left;}
 .company-list .media{padding:0 50px;}
