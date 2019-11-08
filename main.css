@@ -611,7 +611,7 @@ ul.nav.navbar.contact a::after{
 
 
 .project .proset{padding:20px;width:100%; }
-.project .proset li{height:300px; margin:0 5px; background-color:#fafafa; border:1px solid #58d487;}
+.project .proset li{ overflow: hidden; height:300px; margin:0 5px; background-color:#fafafa; border:1px solid #58d487;}
 .project .proset li a{display:block;}
 .project .proset li a article{position: relative; background-position:center; background-size:cover; background-repeat: no-repeat; padding: 20px; background-size:cover;}
 .project .proset li a article::before{
@@ -699,6 +699,25 @@ button.slick-prev.slick-arrow {
   color: #a0d063;
   margin-left: -142px;
 }
+
+
+span.techno {
+  position: absolute;
+  bottom: 24px;
+  right: -46px;
+  background: #f83f37;
+  font-size: 25px;
+  padding: 12px;
+  color: #fff;
+  font-weight: bold;
+  transform: rotate(-40deg);
+  width: 50%;
+  text-align: center;
+  box-shadow: 2px 3px 6px 4px rgba(206, 206, 206, 0.65);
+}
+
+
+
 
 
 
