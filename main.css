@@ -611,7 +611,15 @@ ul.nav.navbar.contact a::after{
 
 
 .project .proset{padding:20px;width:100%; }
-.project .proset li{ overflow: hidden; height:300px; margin:0 5px; background-color:#fafafa; border:1px solid #58d487;}
+.project .proset li{ 
+  overflow: hidden;
+    height: 300px;
+    margin: 0 5px;
+    background-color: #fafafa;
+    border: 4px solid #58d487;
+    /* padding: 20px; */
+    border-radius: 0 0 110px 0;
+}
 .project .proset li a{display:block;}
 .project .proset li a article{position: relative; background-position:center; background-size:cover; background-repeat: no-repeat; padding: 20px; background-size:cover;}
 .project .proset li a article::before{
@@ -619,7 +627,7 @@ ul.nav.navbar.contact a::after{
   position: absolute;
   width:100%;
   height:100%;
-  background-color:rgba(51, 51, 51, 0.61);
+  background-color:rgba(0, 0, 0, 0.81);
   top:0; left:0;
   opacity:0.8;
   z-index:0;
@@ -636,16 +644,27 @@ ul.nav.navbar.contact a::after{
   margin-bottom: 12px;
   z-index: 1;
   position: relative;
-  font-size: 20px;
+  font-size: 35px;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 600;
-  text-shadow: 2px 1px 0px #a2d066;}
+  font-weight: bolder;
+  text-shadow: 2px 1px 0px #a2d066;
+}
 .project .proset li a:hover h4{
   opacity:1;
 }
 .project .proset li a h4{ opacity:0; margin-bottom:12px;z-index:1; position: relative;font-size:20px; font-weight:bolder; color:#fff;}
-.project .proset li a .fa{color:#58d487;}
+.project .proset li a .fa{
+  color: #58d487;
+  width: 26px;
+  text-align: center;
+  height: 24px;
+  font-size: 12px;
+  background: #5cd89575;
+  /* color: #fff; */
+  line-height: 25px;
+  border-radius: 12px 0 12px 0px;
+}
 .project .proset li a:hover p{
   opacity:1;
 }
@@ -678,7 +697,7 @@ ul.nav.navbar.contact a::after{
   100%{ width:290px;}
 }
 
-.project .proset li a {
+.project li a {
   height: 100%;
   position: relative;
   display: flex;
@@ -703,8 +722,8 @@ button.slick-prev.slick-arrow {
 
 span.techno {
   position: absolute;
-  bottom: 24px;
-  right: -46px;
+  bottom: 57px;
+    right: -80px;
   background: #f83f37;
   font-size: 25px;
   padding: 12px;

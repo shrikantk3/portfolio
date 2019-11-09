@@ -352,3 +352,12 @@ label.form-inline {
     display: none;
 }
 }
+
+
+div#pagepiling {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

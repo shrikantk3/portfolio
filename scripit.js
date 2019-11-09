@@ -273,33 +273,33 @@ $(document).ready(function(){
            
         }
   
-        $('.proset').slick({
-          centerMode: true,
-          centerPadding: '60px',
-          slidesToShow: 3,
-          arrows:true,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
-              }
-            }
-          ]
-        });
-        $('.project .proset').width($(window).width()-60);
+        // $('.proset').slick({
+        //   centerMode: true,
+        //   centerPadding: '60px',
+        //   slidesToShow: 3,
+        //   arrows:true,
+        //   responsive: [
+        //     {
+        //       breakpoint: 768,
+        //       settings: {
+        //         arrows: false,
+        //         centerMode: true,
+        //         centerPadding: '40px',
+        //         slidesToShow: 3
+        //       }
+        //     },
+        //     {
+        //       breakpoint: 480,
+        //       settings: {
+        //         arrows: false,
+        //         centerMode: true,
+        //         centerPadding: '40px',
+        //         slidesToShow: 1
+        //       }
+        //     }
+        //   ]
+        // });
+        // $('.project .proset').width($(window).width()-60);
 });
 
 $(window).resize(()=>{
