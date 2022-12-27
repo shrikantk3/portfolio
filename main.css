@@ -671,7 +671,7 @@ ul.nav.navbar.contact a::after{
 .project .proset li a p{ opacity:0; z-index:1; position: relative;font-size:20px; line-height:25px; font-weight:lighter; color:#fff !important;}
 .company-list{display:flex; padding: 30px 0 0}
 .company-list .media-body{text-align:left;}
-.company-list .media{padding:0 50px;}
+.company-list .media{padding:0 0px;}
 .company-list .media:nth-child(odd){border-right:3px dotted #a0d063;}
 .company-list .media:nth-child(even){padding-right:0px;}
 .company-list .media{display:flex;justify-content: left; align-items: center; }
